@@ -1,0 +1,14 @@
+apiVersion: networking.k8s.io/v1
+kind: NetworkPolicy
+metadata:
+  creationTimestamp: null
+  name: docker-spring-angular
+spec:
+  ingress:
+    - from:
+        - podSelector:
+            matchLabels:
+              io.kompose.network/docker-spring-angular: "true"
+  podSelector:
+    matchLabels:
+      io.kompose.network/docker-spring-angular: "true"
