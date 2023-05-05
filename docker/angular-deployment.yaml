@@ -30,7 +30,7 @@ spec:
               value: http://localhost:8080
             - name: TZ
               value: Europe/Berlin
-          image: frontend
+          image: rainerdiekmann/dockerspringangularuser:frontend
           name: angular
           ports:
             - containerPort: 80
