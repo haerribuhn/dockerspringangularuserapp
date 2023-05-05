@@ -1,1 +1,3 @@
-docker build -f ../docker/frontend.Dockerfile -t frontend .
+docker build -f ../docker/frontend.Dockerfile -t rainerdiekmann/dockerspringangularuser:frontend .
+docker push rainerdiekmann/dockerspringangularuser:frontend
+
